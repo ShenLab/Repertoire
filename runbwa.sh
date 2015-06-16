@@ -1,10 +1,11 @@
 #!/bin/bash
 
 sampleprefix=$1
-ref=$2
-BWA=$3
-SAMTOOLS=$4
-outdir=$5
+datapath=$2
+ref=$3
+BWA=$4
+SAMTOOLS=$5
+outdir=$6
 
 mkdir -p $outdir
 
