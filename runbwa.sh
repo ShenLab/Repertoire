@@ -9,7 +9,7 @@ outdir=$6
 
 mkdir -p $outdir
 
-for fq in $sampleprefix*.fastq
+for fq in $datapath/$sampleprefix*.fastq
 do
 	name=`basename $fq .fastq`
  	$BWA bwasw -t 4 -z 3 -c 3 -r 1 -q 4 -w 100 $ref $fq > $outdir/$name.sam
