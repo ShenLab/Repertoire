@@ -2,7 +2,8 @@ Repertoire
 =========
 Analytical tools for TCR sequencing data
 
-BEFORE RUNNING THE PIPELINE
+
+Setup: before running the pipeline
 =========
 
 ##Software Requirements##
