@@ -1,5 +1,11 @@
+/*
+Code adapted from https://wiki.uni-koeln.de/biologicalphysics/index.php/Implementation_of_the_Smith-Waterman_local_alignment_algorithm
+*/
+
+
 //#ifndef HIT_HPP
 //#define HIT_HPP
+
 
 #include <iostream>
 #include <fstream>
