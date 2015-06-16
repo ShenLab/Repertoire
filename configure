@@ -1,0 +1,5 @@
+#!/bin/sh
+
+tar -xvzf fastaref.tgz
+g++ mergereads.cpp -o mergereads
+g++ -I. -Iinclude -I:`pwd`  errorcorrection.cpp -g -o fixreads
