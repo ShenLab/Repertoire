@@ -8,17 +8,26 @@ Setup: before running the pipeline
 
 ##Software Requirements##
 Burrows-Wheeler Aligner: http://bio-bwa.sourceforge.net/
+
 Samtools: http://samtools.sourceforge.net/
 
 ##Other Requirements##
-Download the Human fasta reference (custom mask with patch for TCR analysis):
+Download the human fasta reference (custom mask with patch for TCR analysis) from
+https://www.dropbox.com/s/alal55conhsdv51/fastaref.tgz
 
-Run configuration script:
+After downloading the reference, run the configuration script:
 ./configure
-curl -O 
+
+This unzips the fasta tarball and compiles the C++ scripts
 
 Run the DEMO
 =========
 
 
+Process a fastq file
+=========
+
+
+Components
+=========
 
