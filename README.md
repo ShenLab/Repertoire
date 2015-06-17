@@ -13,6 +13,7 @@ Samtools: http://samtools.sourceforge.net/
 
 ##Other Requirements##
 Download the human fasta reference (custom mask with patch for TCR analysis):
+
 curl -O -L https://www.dropbox.com/s/alal55conhsdv51/fastaref.tgz?dl=1  (NOTE: 830M download)
 
 After downloading the reference, run the configuration script:
