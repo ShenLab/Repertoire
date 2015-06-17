@@ -62,7 +62,10 @@ https://github.com/bgrinshpun/CircosVJ
 
 Overview of Files
 =========
-sample.R1.fastq, sample.R2.fastq <- test sample
-runbwa.sh <- bwa script to map reads from a fastq file to a reference genome.
-run_errorcorrection.sh, mergereads.cpp,errorcorrection.cpp <- Processes reads from pair of bam files from paired end data and runs the error correction step. Errorcorrection.cpp uses smithwaterman.h to perform local alignment. The output is a single merged fastq. 
-doTRA.sh, doTRB.sh <- Starting with an input bam file, performs CDR3 identification and in silicon translation of alpha and beta chains respectively. These scripts use ReadSam and OutputCDR3prot scripts which require files in cassetteref.
+*sample.R1.fastq, sample.R2.fastq* <- test sample
+
+*runbwa.sh* <- bwa script to map reads from a fastq file to a reference genome.
+
+*run_errorcorrection.sh, mergereads.cpp,errorcorrection.cpp* <- Processes reads from pair of bam files from paired end data and runs the error correction step. Errorcorrection.cpp uses smithwaterman.h to perform local alignment. The output is a single merged fastq. 
+
+*doTRA.sh, doTRB.sh* <- Starting with an input bam file, performs CDR3 identification and in silicon translation of alpha and beta chains respectively. These scripts use ReadSam and OutputCDR3prot scripts which require files in cassetteref.
