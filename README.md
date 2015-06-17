@@ -25,8 +25,8 @@ This unzips the fasta tarball and compiles the C++ scripts.
 
 Finally, construct the fasta and BWT index files:
 ```
-samtools faidx \<fastafile\>
-bwa index -a bwtsw \<fastafile\>
+samtools faidx <fastafile>
+bwa index -a bwtsw <fastafile>
 ``` 
 
 
