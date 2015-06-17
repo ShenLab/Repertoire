@@ -31,13 +31,15 @@ bwa index -a bwtsw <fastafile>
 
 Process a fastq file
 =========
-The following script processes a paired end sample (\<prefix\>.R1.fastq, \<prefix\>.R2.fastq):
+The following script processes a paired end sample --> \<prefix\>.R1.fastq, \<prefix\>.R2.fastq:
 
 ```
-sh runpipeline.sh <sample_name_prefix without .fastq> <output path> <PATH TO REFERENCE FASTA>  <PATH TO BWA> <PATH TO SAMTOOLS>
+sh runpipeline.sh <sample_name_prefix without .fastq> <output path> <PATH TO REFERENCE FASTA>
+<PATH TO BWA> <PATH TO SAMTOOLS>
 ```
 
-A 10000 line (2500 sequences) paired end test sample is provided (sample.R1.fastq,sample.R2.fastq). Run as follows:
+A 10000 line (2500 sequences) paired end test sample is provided --> sample.R1.fastq,sample.R2.fastq. 
+Run as follows:
 ```
 sh runpipeline.sh sample  <output path> <PATH TO REFERENCE FASTA>  <PATH TO BWA> <PATH TO SAMTOO    LS>
 ```
