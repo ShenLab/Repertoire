@@ -179,7 +179,7 @@ return ($score_out, $aln_len, @aln0);
 
 ##########read reference J motif##########
 ### the last column should not be strings for match, don't know why???
-open (FileNameJref,"cassettecheck/TRBJ.ref.IGMT.txt");
+open (FileNameJref,"cassetteref/TRBJ.ref.IGMT.txt");
 my @jref;
 <FileNameJref>; #remove the head line  
 while (<FileNameJref>){
@@ -202,7 +202,7 @@ open (FoutTMP, ">$datadir/NO_J_motif.trimmed.CDR3DNAseq.4FindMotif.fasta");
 open (FileName, "$datadir/$inFile");
 
 
-open(Fin, 'cassettecheck/TRBV.ref.IGMT.txt');
+open(Fin, 'cassetteref/TRBV.ref.IGMT.txt');
 my @ref3end;
 while (<Fin>){
 	chomp;
