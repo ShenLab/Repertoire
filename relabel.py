@@ -195,7 +195,7 @@ data=[i.strip().split("\t") for i in data]
 # replace by new designations
 reassigned=[]
 for line in data:
-	reassigned.append(['@'.join([D[line[2]],D[line[3]],line[4],line[5],line[6]]),int(line[1])])
+	reassigned.append(['@'.join([D[line[2]],D[line[3]],line[4],line[5]]),int(line[1])])
 
 
 # remove lines containing 'del'
@@ -212,7 +212,7 @@ print head
 for line in S:
 	count=line[1]
 	id=line[0].split("@")
-	print('%s.%s\t%d\t%s\t%s\t%s\t%s\t%s') %(id[0],id[1],count,id[0],id[1],id[2],id[3],id[4])
+	print('%s.%s\t%d\t%s\t%s\t%s\t%s') %(id[0],id[1],count,id[0],id[1],id[2],id[3])
 
 
 
