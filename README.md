@@ -56,8 +56,9 @@ Statistical Analysis
 ========
 JS_entropy_v7.7.py -> Compute Jensen-Shannon divergence (not distance) between two TCR samples, typically brain and blood.
 
-Input 1 is the blood sample in the standard productive reperoire output format.
-Input 2 is the brain sample in the standard productive reperoire output format.
+Input 1 is the blood sample in the standard productive repertoire output format.
+
+Input 2 is the brain sample in the standard productive repertoire output format.
 
 ```
 python JS_entropy_v7.7.py <blood sample> <brain sample>
