@@ -40,7 +40,7 @@ sh runpipeline.sh <prefix> <output path> <PATH TO REFERENCE FASTA> <PATH TO BWA>
 <PATH TO SAMTOOLS>
 ```
 
-A 10000 line (2500 sequences) paired end test sample is provided:
+A 20000 line (5000 sequences) paired end test sample is provided:
 sample.R1.fastq,sample.R2.fastq.
 
 Run as follows:
@@ -49,10 +49,19 @@ sh runpipeline.sh sample <output path> <PATH TO REFERENCE FASTA> <PATH TO BWA>
 <PATH TO SAMTOOLS>
 ```
 
+The final processed dataset will be in the folder <output path>/FINALOUTPUT
+
 
 Statistical Analysis
 ========
-JS_entropy_v7.7.py
+JS_entropy_v7.7.py -> Compute Jensen-Shannon divergence (not distance) between two TCR samples, typically brain and blood.
+
+Input 1 is the blood sample in the standard productive reperoire output format.
+Input 2 is the brain sample in the standard productive reperoire output format.
+
+```
+python JS_entropy_v7.7.py <blood sample> <brain sample>
+```
 
 
 Make Circos plots of VJ usage
@@ -70,3 +79,5 @@ Overview of Files
 *run_errorcorrection.sh, mergereads.cpp, errorcorrection.cpp* <- Processes reads from pair of bam files from paired end data and runs the error correction step. Script errorcorrection.cpp uses smithwaterman.h to perform local alignment. The output is a single merged fastq. 
 
 *doTRA.sh, doTRB.sh* <- Starting with an input bam file, performs CDR3 identification and *in silico* translation of alpha and beta chains respectively. These scripts use ReadSam and OutputCDR3prot scripts which require files in cassetteref.
+
+*getproductive.sh, relabel.py, trimCDR3.py* <- After CDR3 identification these scripts produce a simplified output of added up productive sequences where out of frame and stop sequences removed, unresolvable cassettes are merged, pseudogenes are removed, and the sequence is trimmed to include only the CDR3 region of the read for accurate interpretation of counts.
