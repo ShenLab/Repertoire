@@ -8,7 +8,7 @@ mkdir -p $outdir
 
 
 sample=$datapath/$prefix*.bam
-samtools view -h $sample > `basename $sample .bam`.sam
+# samtools view -h $sample > `basename $sample .bam`.sam
 perl ReadSam.TRB.pl $outdir `basename $sample .bam`.sam 2>/dev/null
 perl OutputCDR3prot.TRBbyscore.pl $outdir `basename $sample .bam`.sam.CDR3.VJ.seq 2>/dev/null
 rm `basename $sample .bam`.sam
